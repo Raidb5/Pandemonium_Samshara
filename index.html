@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
             padding: 0;
             height: 600vh;
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black 30%),
-                        url('media/historia.png') no-repeat center center fixed;
+                url('media/historia.png') no-repeat center center fixed;
             background-size: cover;
             color: white;
             font-family: Arial, sans-serif;
@@ -28,7 +29,16 @@
             width: 100%;
         }
 
-        h1, h2, h3 {
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+        }
+
+        h1,
+        h2,
+        h3 {
             text-align: center;
             margin: 0;
             opacity: 1;
@@ -39,10 +49,12 @@
             font-family: Beaufort;
             src: url(media/fonts/Beaufort-Bold.ttf);
         }
+
         @font-face {
             font-family: Beaufort-light;
             src: url(media/fonts/BeaufortLight.ttf);
         }
+
         @font-face {
             font-family: Beaufort-medium;
             src: url(media/fonts/BeaufortMedium.ttf);
@@ -72,7 +84,8 @@
             line-height: 27px;
         }
 
-        .sub1, .sub2 {
+        .sub1,
+        .sub2 {
             text-align: center;
             margin: 0;
             font-family: Beaufort;
@@ -92,57 +105,168 @@
 
         img {
             display: block;
-            margin: 0 auto; /* Centra la imagen horizontalmente */
+            margin: 0 auto;
+            /* Centra la imagen horizontalmente */
             width: 60px;
             margin-bottom: 50px;
         }
+
+        button {
+            letter-spacing: 2px;
+            font-size: 15px;
+            font-family: Beaufort-light;
+            color: rgb(244, 223, 176);
+            border-image: linear-gradient(to bottom, rgb(227, 198, 137), rgb(155, 120, 44));
+            border-image-slice: 1;
+            background: #0a0a0a;
+            padding: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        button:hover {
+            background: #131313;
+        }
     </style>
 </head>
+
 <body>
     <div class="content">
-        <h1>SAMSHARA</h1>
-        <h2>EL HIJO DE LA CATÁSTROFE</h2>
+        <h1 id="titulo">SAMSHARA</h1>
+        <h2 id="subtitulo">EL HIJO DE LA CATÁSTROFE</h2>
         <h3>Desplaza para comenzar</h3>
         <img src="media/divisor.png">
-        <p class="sub1">SAMSHARA</p>
-        <p class="sub2">EL HIJO DE LA CATÁSTROFE</p>
-        <p>
+        <p class="sub1" id="titulo2">SAMSHARA</p>
+        <p class="sub2" id="subtitulo2">EL HIJO DE LA CATÁSTROFE</p>
+        <div id="historia" style="display:none;">
+            <p>
+                El sol ya se había ocultado. La oscuridad era una manta espesa, y el aire, 
+                frío y húmedo, calaba hasta los huesos. Samshara, apenas un niño, se acurrucaba 
+                bajo la cama en una pequeña casa en el borde del pueblo. Sus ojos, grandes y asustados, 
+                observaban las sombras que se alargaban en la pared, y su respiración, rápida, apenas se contenía.
+                <br><br>
+                Los gritos de la batalla resonaban a lo lejos. Pero no eran los gritos lo que lo 
+                mantenía paralizado. No. Era el sonido de los pasos. Los pasos de alguien que no 
+                debía estar allí. Alguien que no pertenecía a su gente.
+                <br><br>
+                —Paso.
+                <br><br>
+                El sonido del pie golpeando la tierra era como un martillo que hacía eco en su pecho. 
+                El niño se tapó la boca con las manos para ahogar el miedo. El sonido retumbó más cerca. 
+                Samshara contuvo la respiración. El polvo de la casa se levantaba en el aire, y las sombras parecían tomar vida propia.
+                <br><br>
+                —Paso.
+                <br><br>
+                Otro paso, más cerca. La puerta de la casa se abrió con un chirrido que pareció 
+                retumbar en el silencio de la noche. Los pasos continuaron.
+                <br><br>
+                —Paso.
+                <br><br>
+                El niño quedó inmóvil, su corazón latiendo con fuerza.
+                El tintineo de las armas resonaba en el aire. El sonido de la respiración de alguien que se acercaba.
+                Su figura apareció en la entrada, su sombra una silueta imponente. Samshara podía 
+                escuchar la armadura de acero del hombre chocar con el suelo. Y su respiración, pesada, que llenaba la habitación.
+                <br><br>
+                —Paso.
+                <br><br>
+                El niño, pequeño y vulnerable, sentía cómo el miedo lo invadía por completo. 
+                Los pasos del invasor no se detenían. El suelo temblaba ligeramente bajo ellos, y el aire, 
+                cargado de una tensión palpable, lo rodeaba. No podía moverse. No podía gritar. Solo esperar.
+                <br><br>
+                —Paso.
+                <br><br>
+                Otro más. La figura se encontraba frente a él, pero Samshara no se atrevió a mirar. 
+                Sus ojos permanecían fijos en la madera astillada bajo él, buscando refugio en la 
+                solidez del suelo. El sonido de las botas del hombre se aproximaba, retumbando en su 
+                mente como el eco de la guerra, pero Samshara no se movió. En su interior, una chispa 
+                de resistencia seguía viva, aferrándose a la única verdad que le quedaba: si otros podían 
+                escapar a la muerte, él también lo haría.
+                <br><br>
+                —Paso.
+                <br><br>
+                El hombre pasó. Y luego... silencio.
+                <br><br>
+                El niño esperó unos segundos, luego, cuando el último paso se desvaneció en la distancia, 
+                se permitió soltar el aire que no había respirado desde el primer paso. Pero el miedo, 
+                ese miedo antiguo, nunca se iría. Porque aunque los soldados habían desaparecido, la guerra permanecía en su mente.
+            </p>
+        </div>
+        <div id="biografia">
+            <p>
                 Samshara nació en un tranquilo pueblo en las montañas del norte, donde el aire fresco
-            y la paz rodeaban su vida. Sus padres, campesinos humildes, trabajaban incansablemente 
-            en la tierra, siempre buscando lo mejor para su pequeño hijo. La vida, aunque difícil, 
-            se llevaba con esperanza. Los días eran largos, pero simples: amaneceres dorados, risas 
-            familiares y una sensación de que el futuro les pertenecía. Todo eso cambió una sombría noche, 
-            cuando la guerra descendió como una tormenta imparable.
-            <br><br>
-            El ejército invasor arrasó con todo a su paso, destruyó su hogar, su vida, y los sueños 
-            de su familia. Los gritos de los caídos resonaron a través de las montañas, y el sonido 
-            de los cascos de los invasores retumbó como un eco mortal. Samshara, solo un niño, se 
-            escondió bajo los escombros, mientras el horror destruía su mundo.
-            <br><br>
-            El rugir de la guerra cesó como un suspiro agotado. El pueblo, ahora un campo de ruinas, 
-            yacía en silencio, marcado por el eco de la destrucción. Samshara, su pequeño cuerpo cubierto 
-            de polvo y la sangre de su gente, permaneció inmóvil entre los restos de su hogar. 
-            No lloró. No hubo consuelo en su alma destrozada. En su mirada solo quedaba vacío, como 
-            si incluso el dolor hubiera dejado de importar. Fue entonces cuando un sacerdote, caminando 
-            entre la devastación, lo encontró. Al verlo, no vio un niño. Vio una sombra en forma humanoide, 
-            perdida en el caos, pero también vio algo más: la chispa de una vida que aún no había sido 
-            arrebatada por completo. Un alma que, aunque marcada por la tragedia, podría ser redimida.
-            <br><br>
-            El sacerdote lo llevó al templo de Helm, dios de la protección, donde Samshara fue acogido como un hijo. 
-            A lo largo de los años, creció bajo su tutela, aprendiendo no solo las artes de la curación y 
-            la fe, sino también el peso de lo que perdió. Se convirtió en un clérigo, un hombre que guiaba 
-            a otros a la paz con la misma mano con la que había sido salvado. Pero el dolor nunca se desvaneció del todo.
-            <br><br>
-            Samshara avanza por el mundo con un propósito claro y firme: sanar las heridas de aquellos que sufren y 
-            proteger a los más vulnerables. Cada paso que da está guiado por la memoria de sus padres y por la fe 
-            que el sacerdote le brindó en su niñez. Con el corazón lleno de esperanza, busca inspirar a otros a 
-            encontrar la paz en medio de la adversidad. Para él, cada acto de bondad es un homenaje a los que ya 
-            no están, un recordatorio de que la luz puede siempre prevalecer, incluso tras la oscuridad de la guerra.
-        </p>
+                y la paz rodeaban su vida. Sus padres, campesinos humildes, trabajaban incansablemente
+                en la tierra, siempre buscando lo mejor para su pequeño hijo. La vida, aunque difícil,
+                se llevaba con esperanza. Los días eran largos, pero simples: amaneceres dorados, risas
+                familiares y una sensación de que el futuro les pertenecía. Todo eso cambió una sombría noche,
+                cuando la guerra descendió como una tormenta imparable.
+                <br><br>
+                El ejército invasor arrasó con todo a su paso, destruyó su hogar, su vida, y los sueños
+                de su familia. Los gritos de los caídos resonaron a través de las montañas, y el sonido
+                de los cascos de los invasores retumbó como un eco mortal. Samshara, solo un niño, se
+                escondió bajo los escombros, mientras el horror destruía su mundo.
+                <br><br>
+                El rugir de la guerra cesó como un suspiro agotado. El pueblo, ahora un campo de ruinas,
+                yacía en silencio, marcado por el eco de la destrucción. Samshara, su pequeño cuerpo cubierto
+                de polvo y la sangre de su gente, permaneció inmóvil entre los restos de su hogar.
+                No lloró. No hubo consuelo en su alma destrozada. En su mirada solo quedaba vacío, como
+                si incluso el dolor hubiera dejado de importar. Fue entonces cuando un sacerdote, caminando
+                entre la devastación, lo encontró. Al verlo, no vio un niño. Vio una sombra en forma humanoide,
+                perdida en el caos, pero también vio algo más: la chispa de una vida que aún no había sido
+                arrebatada por completo. Un alma que, aunque marcada por la tragedia, podría ser redimida.
+                <br><br>
+                El sacerdote lo llevó al templo de Helm, dios de la protección, donde Samshara fue acogido como un hijo.
+                A lo largo de los años, creció bajo su tutela, aprendiendo no solo las artes de la curación y
+                la fe, sino también el peso de lo que perdió. Se convirtió en un clérigo, un hombre que guiaba
+                a otros a la paz con la misma mano con la que había sido salvado. Pero el dolor nunca se desvaneció del
+                todo.
+                <br><br>
+                Samshara avanza por el mundo con un propósito claro y firme: sanar las heridas de aquellos que sufren y
+                proteger a los más vulnerables. Cada paso que da está guiado por la memoria de sus padres y por la fe
+                que el sacerdote le brindó en su niñez. Con el corazón lleno de esperanza, busca inspirar a otros a
+                encontrar la paz en medio de la adversidad. Para él, cada acto de bondad es un homenaje a los que ya
+                no están, un recordatorio de que la luz puede siempre prevalecer, incluso tras la oscuridad de la
+                guerra.
+            </p>
+        </div>
+        <div  class="button">
+            <button id="boton" onclick="toggleText()">LEER LA HISTORIA DE SAMSHARA</button>
+        </div>
     </div>
 
+
     <script>
-        window.addEventListener('scroll', function() {
+        function toggleText() {
+            var biografia = document.getElementById("biografia");
+            var historia = document.getElementById("historia");
+            var titulo = document.getElementById("titulo");
+            var subtitulo = document.getElementById("subtitulo");
+            var boton = document.getElementById("boton");
+
+            if (biografia.style.display === "none") {
+                biografia.style.display = "block";
+                historia.style.display = "none";
+                titulo.textContent  = "SAMSHARA";
+                subtitulo.textContent = "EL HIJO DE LA CATÁSTROFE";
+                titulo2.textContent  = "SAMSHARA";
+                subtitulo2.textContent = "EL HIJO DE LA CATÁSTROFE";
+                boton.textContent="LEER LA HISTORIA DE SAMSHARA"
+            } else {
+                biografia.style.display = "none";
+                historia.style.display = "block";
+                titulo.textContent  = "ECOS DE GUERRA";
+                subtitulo.textContent = "POR JORGE CARREÑO";
+                titulo2.textContent  = "ECOS DE GUERRA";
+                subtitulo2.textContent = "POR JORGE CARREÑO";
+                boton.textContent="LEER LA BIOGRAFÍA DE SAMSHARA"
+            }
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        window.addEventListener('scroll', function () {
             const scrollY = window.scrollY;
             const fadePoint = 100;
 
@@ -162,4 +286,5 @@
         });
     </script>
 </body>
+
 </html>
