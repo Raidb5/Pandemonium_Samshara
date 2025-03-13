@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samshara</title>
+    <link rel="icon" type="image/x-icon" href="media/ico.ico">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 600vh;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black 30%),
+                        url('media/historia.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            font-family: Beaufort;
+        }
+
+        .content {
+            margin-top: 500px;
+            padding: 20px;
+            max-width: 700px;
+            width: 100%;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            margin: 0;
+            opacity: 1;
+            transition: opacity 0.4s ease-out;
+        }
+
+        @font-face {
+            font-family: Beaufort;
+            src: url(media/fonts/Beaufort-Bold.ttf);
+        }
+        @font-face {
+            font-family: Beaufort-light;
+            src: url(media/fonts/BeaufortLight.ttf);
+        }
+        @font-face {
+            font-family: Beaufort-medium;
+            src: url(media/fonts/BeaufortMedium.ttf);
+        }
+
+        h1 {
+            font-size: 70px;
+            margin-bottom: 40px;
+            color: rgb(255, 250, 244);
+        }
+
+        h2 {
+            color: rgb(244, 223, 176);
+        }
+
+        h3 {
+            color: rgb(236, 226, 206);
+            margin-top: 20px;
+            margin-bottom: 200px;
+            opacity: 30%;
+        }
+
+        p {
+            text-align: left;
+            font-family: Beaufort-medium;
+            font-size: 22px;
+            line-height: 27px;
+        }
+
+        .sub1, .sub2 {
+            text-align: center;
+            margin: 0;
+            font-family: Beaufort;
+        }
+
+        .sub1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: rgb(255, 250, 244);
+        }
+
+        .sub2 {
+            color: rgb(244, 223, 176);
+            font-size: 15px;
+            margin-bottom: 130px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto; /* Centra la imagen horizontalmente */
+            width: 60px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>SAMSHARA</h1>
+        <h2>EL HIJO DE LA CATÁSTROFE</h2>
+        <h3>Desplaza para comenzar</h3>
+        <img src="media/divisor.png">
+        <p class="sub1">SAMSHARA</p>
+        <p class="sub2">EL HIJO DE LA CATÁSTROFE</p>
+        <p>
+                Samshara nació en un tranquilo pueblo en las montañas del norte, donde el aire fresco
+            y la paz rodeaban su vida. Sus padres, campesinos humildes, trabajaban incansablemente 
+            en la tierra, siempre buscando lo mejor para su pequeño hijo. La vida, aunque difícil, 
+            se llevaba con esperanza. Los días eran largos, pero simples: amaneceres dorados, risas 
+            familiares y una sensación de que el futuro les pertenecía. Todo eso cambió una sombría noche, 
+            cuando la guerra descendió como una tormenta imparable.
+            <br><br>
+            El ejército invasor arrasó con todo a su paso, destruyó su hogar, su vida, y los sueños 
+            de su familia. Los gritos de los caídos resonaron a través de las montañas, y el sonido 
+            de los cascos de los invasores retumbó como un eco mortal. Samshara, solo un niño, se 
+            escondió bajo los escombros, mientras el horror destruía su mundo.
+            <br><br>
+            El rugir de la guerra cesó como un suspiro agotado. El pueblo, ahora un campo de ruinas, 
+            yacía en silencio, marcado por el eco de la destrucción. Samshara, su pequeño cuerpo cubierto 
+            de polvo y la sangre de su gente, permaneció inmóvil entre los restos de su hogar. 
+            No lloró. No hubo consuelo en su alma destrozada. En su mirada solo quedaba vacío, como 
+            si incluso el dolor hubiera dejado de importar. Fue entonces cuando un sacerdote, caminando 
+            entre la devastación, lo encontró. Al verlo, no vio un niño. Vio una sombra en forma humanoide, 
+            perdida en el caos, pero también vio algo más: la chispa de una vida que aún no había sido 
+            arrebatada por completo. Un alma que, aunque marcada por la tragedia, podría ser redimida.
+            <br><br>
+            El sacerdote lo llevó al templo de Helm, dios de la protección, donde Samshara fue acogido como un hijo. 
+            A lo largo de los años, creció bajo su tutela, aprendiendo no solo las artes de la curación y 
+            la fe, sino también el peso de lo que perdió. Se convirtió en un clérigo, un hombre que guiaba 
+            a otros a la paz con la misma mano con la que había sido salvado. Pero el dolor nunca se desvaneció del todo.
+            <br><br>
+            Samshara avanza por el mundo con un propósito claro y firme: sanar las heridas de aquellos que sufren y 
+            proteger a los más vulnerables. Cada paso que da está guiado por la memoria de sus padres y por la fe 
+            que el sacerdote le brindó en su niñez. Con el corazón lleno de esperanza, busca inspirar a otros a 
+            encontrar la paz en medio de la adversidad. Para él, cada acto de bondad es un homenaje a los que ya 
+            no están, un recordatorio de que la luz puede siempre prevalecer, incluso tras la oscuridad de la guerra.
+        </p>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollY = window.scrollY;
+            const fadePoint = 100;
+
+            const h1 = document.querySelector('h1');
+            const h2 = document.querySelector('h2');
+            const h3 = document.querySelector('h3');
+
+            if (scrollY < fadePoint) {
+                h1.style.opacity = 1 - (scrollY / fadePoint);
+                h2.style.opacity = 1 - (scrollY / fadePoint);
+                h3.style.opacity = 0.3 - (scrollY / fadePoint);
+            } else {
+                h1.style.opacity = 0;
+                h2.style.opacity = 0;
+                h3.style.opacity = 0;
+            }
+        });
+    </script>
+</body>
+</html>
